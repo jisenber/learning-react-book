@@ -13,9 +13,14 @@
 <body>
   <div id="container"></div>
   <script type = "text/babel">
-  //render method takes 2 arguments: 1. html like elements you wish you output. 2. location in the DOM that React will render the JSX into
+  //render method takes 2 arguments: 3. html like elements you wish you output. 2. location in the DOM that React will render the JSX into
   ReactDOM.render(
-    <h1>Jacob Isenberg </h1>,
+    <div>
+      <h3><i>Jacob Isenberg</i> </h3>
+      <h3><i>Bert McGee </i></h3>
+      <h3><i>Jackie Gosnell </i></h3>
+      <h3><i>Ned Barnes </i></h3>
+    </div>,
     document.getElementById('container')
   );
 
