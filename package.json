@@ -1,0 +1,12 @@
+{
+  "name": "learning-react-book",
+  "version": "1.0.0",
+  "description": "commits dedicated to the Learning React book by Kirupa Chinnathambi",
+  "main": "index.js",
+  "repository": "https://github.com/jisenber/learning-react-book.git",
+  "author": "jisenber <isenberg.jacob@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}

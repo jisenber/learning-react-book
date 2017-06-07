@@ -14,20 +14,19 @@
   <div id="container"></div>
   <script type = "text/babel">
   //render method takes 2 arguments: 3. html like elements you wish you output. 2. location in the DOM that React will render the JSX into
-  var HelloWorld = React.createClass ({ //creates a new component called HelloWorld
+  var Buttonify = React.createClass ({ //creates a new component called HelloWorld
     render: function() {
       return (
-        <p> Hello, world! </p>
+        <div>
+          <button type={this.props.behavior}>{this.props.children}</button>
+        </div>
+        //way you access a property is by calling it via the props property that every component has access to
       );
     }
   });
   ReactDOM.render(
     <div>
-      <HelloWorld/>
-      <HelloWorld/>
-      <HelloWorld/>
-      <HelloWorld/>
-      <HelloWorld/>
+      <Buttonify behavior="Submit">SEND DATA</Buttonify>
     </div>,
     document.getElementById('container')
   );
