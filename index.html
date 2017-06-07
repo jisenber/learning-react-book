@@ -14,12 +14,20 @@
   <div id="container"></div>
   <script type = "text/babel">
   //render method takes 2 arguments: 3. html like elements you wish you output. 2. location in the DOM that React will render the JSX into
+  var HelloWorld = React.createClass ({ //creates a new component called HelloWorld
+    render: function() {
+      return (
+        <p> Hello, world! </p>
+      );
+    }
+  });
   ReactDOM.render(
     <div>
-      <h3><i>Jacob Isenberg</i> </h3>
-      <h3><i>Bert McGee </i></h3>
-      <h3><i>Jackie Gosnell </i></h3>
-      <h3><i>Ned Barnes </i></h3>
+      <HelloWorld/>
+      <HelloWorld/>
+      <HelloWorld/>
+      <HelloWorld/>
+      <HelloWorld/>
     </div>,
     document.getElementById('container')
   );
