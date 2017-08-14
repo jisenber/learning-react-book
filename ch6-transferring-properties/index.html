@@ -35,7 +35,7 @@ var Display = React.createClass({
 var Label = React.createClass({
   render: function() {
     return (
-      <Display {...props}/>
+      <Display {...this.props}/>
     );
   }
 });
@@ -44,7 +44,7 @@ var Shirt = React.createClass ({
   render: function() {
     return (
       <div>
-        <Label {...props}/>
+        <Label {...this.props}/>
       </div>
     );
   }
