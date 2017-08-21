@@ -39,6 +39,15 @@
       }
     });
 
+    var PlusButton = React.createClass ({
+      render: function() {
+
+        return (
+          <button onClick = {this.props.clickHandler} style={this.props.style}>+</button>
+        );
+      }
+    });
+
     var CounterParent = React.createClass({
       getInitialState: function() {
         return {
@@ -78,11 +87,14 @@
           fontWeight: "bold",
           lineHeight: "3px"
         };
+
         // count property given to state property in getInitialState
+        //Important to remember: You cannot directly listen to events on components
         return (
           <div style = {backgroundStyle}>
             <Counter display = {this.state.count}/>
             <button onClick = {this.increase} style = {buttonStyle}>+</button>
+            <PlusButton clickHandler = {this.increase} style ={buttonStyle}/>
           </div>
         );
       }
